@@ -5,7 +5,7 @@ $(function()  {
     var countto  = parseInt($("input#num1").val());
     var countby  = parseInt($("input#num2").val());
 
-    if (countto == true && countby == true && countby <= countto) {
+    if (countto != false && countby != false && countby <= countto) {
 
 
 
