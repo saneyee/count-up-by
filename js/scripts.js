@@ -8,19 +8,20 @@ $(function()  {
     if (countto != false && countby != false && countby <= countto) {
 
 
-
+        var outputstring = " ";
     for (var currentNumber = countby; currentNumber <= countto; currentNumber += countby ) {
-
-      $("#output").append(" " + currentNumber);
-      $("#output").show();
-
+        outputstring += currentNumber + " ";
     }
+    $("#output").text(outputstring);
+    $("h2").show();
+
 }
 else {
   alert("enter valid numbers");
 }
 
 
-  });
+});
+
 
 });
